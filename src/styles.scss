@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*******************************/
+/********* TAILWIND ************/
+/*******************************/
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.material-icons:after {
+  content: attr(data-icon);
+}
+
+.title {
+  &-line {
+    height: 2px;
+    background-color: var(--custom-primary);
+  }
+}

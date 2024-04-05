@@ -1,0 +1,12 @@
+app-card {
+  display: inherit;
+}
+
+:host ::ng-deep .page-memory {
+  * {
+    box-sizing: border-box;
+  }
+  .is-fullscreen {
+    overflow-y: scroll;
+  }
+}

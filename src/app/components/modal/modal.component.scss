@@ -1,0 +1,50 @@
+$color_grey: #585858;
+$color_white: #ffffff;
+
+.modal {
+  align-items: center;
+  backdrop-filter: blur(0.2rem);
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateY(100%);
+  transition: all 270ms ease-in;
+  &.modal--open {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .modal-content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: $color_white;
+    padding: 1em 2em;
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+
+    .modal-footer {
+      text-align: right;
+      display: flex;
+      justify-content: end;
+      &-by {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        a {
+          color: $color_grey;
+        }
+      }
+    }
+  }
+}

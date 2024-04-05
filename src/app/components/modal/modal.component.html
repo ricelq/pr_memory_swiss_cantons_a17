@@ -1,0 +1,23 @@
+<div #modal class="modal" id="modal">
+  <div class="modal-content !py-5">
+    <div class="modal-header">
+      <span class="text-lg">{{ title }}</span>
+      <button (click)="closeModal()" [attr.aria-label]="'Close'">
+        <mat-icon class="!text-gray-600">close</mat-icon>
+      </button>
+    </div>
+    <p class="py-4">
+      {{ content }}
+    </p>
+    <div class="modal-footer">
+      <button
+        class="ml-4"
+        mat-raised-button
+        color="basic"
+        (click)="playAgain()"
+      >
+        {{ button }}
+      </button>
+    </div>
+  </div>
+</div>

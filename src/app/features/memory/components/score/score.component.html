@@ -1,0 +1,26 @@
+<nav class="header text-white md:text-base text-sm">
+  <div class="left">
+    <div class="movement lg:px-2 px-1">
+      <span>Moves :</span>
+      <span class="available pl-1">{{ moves }}</span>
+    </div>
+
+    <div class="movement lg:px-2 px-1">
+      <span>Misses :</span>
+      <span class="available pl-1">{{ missed }}</span>
+    </div>
+  </div>
+
+  <div class="right">
+    <button
+      class="flex"
+      (click)="playAgain()"
+      [attr.aria-label]="'Replay the game'"
+    >
+      <mat-icon
+        class="material-icons text-3xl !w-full !h-full pr-4"
+        data-icon="replay"
+      ></mat-icon>
+    </button>
+  </div>
+</nav>

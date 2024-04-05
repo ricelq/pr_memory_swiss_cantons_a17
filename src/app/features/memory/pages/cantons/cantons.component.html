@@ -1,0 +1,35 @@
+<main class="page-memory">
+  <div class="container px-5 mx-auto max-w-7x1">
+    <div class="title title-component flex flex-wrap w-full py-4">
+      <div class="mb-2">
+        <h1>Swiss Cantons</h1>
+        <div class="title title-line bg-tertiary rounded"></div>
+      </div>
+    </div>
+
+    <div #pagememorycontent class="page-memory-content bg-gray-50">
+      <app-score
+        [moves]="moves"
+        [missed]="missed"
+        (replay)="playAgain()"
+      ></app-score>
+
+      <app-grid
+        [cards]="cards"
+        (misesCounter)="misesCounter()"
+        (movesCounter)="movesCounter()"
+        (hasWin)="hasWin()"
+        (hasLose)="hasLose()"
+      >
+      </app-grid>
+
+      <app-modal
+        #modal
+        [title]="modalTitle"
+        [content]="modalContent"
+        [button]="modalButton"
+        (modalAction)="modalAction($event)"
+      ></app-modal>
+    </div>
+  </div>
+</main>

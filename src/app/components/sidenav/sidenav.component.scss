@@ -1,0 +1,37 @@
+/**
+ * @ Description: This file is part of the PRODEIMAT project
+ * @ Author: Ricel Quispe
+ */
+
+// colors
+$color_secondary: #585555;
+$color_white: #ffffff;
+$color_black: #000000;
+
+.sidenav-logo {
+  background-color: $color_white;
+  color: $color_black;
+  padding: 15px;
+}
+.mat-list-item {
+  display: flex;
+  align-items: center;
+}
+mat-expansion-panel {
+  mat-expansion-panel-header:not([aria-disabled="true"]):hover {
+    background-color: $color_secondary !important;
+  }
+  .mat-nav-list-link {
+    height: 40px;
+    span {
+      font-family: "raleway-light";
+    }
+  }
+  .link-active {
+    background-color: $color_secondary;
+  }
+  .mdc-list-item:focus::before {
+    background-color: $color_secondary;
+    opacity: 0;
+  }
+}

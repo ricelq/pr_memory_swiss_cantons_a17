@@ -1,0 +1,18 @@
+<!--
+ * @ Description: This file is part of the PRODEIMAT project
+ * @ Author: Ricel Quispe
+ -->
+<header>
+  <mat-toolbar color="primary" class="relative z-10 flex justify-between">
+    <div class="flex items-center">
+      <button
+        (click)="toggleSideNav()"
+        mat-icon-button
+        class="icon-button"
+        [attr.aria-label]="!sideNav.opened ? 'Menu' : 'Close menu'"
+      >
+        <mat-icon class="material-icons" data-icon="menu"></mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+</header>

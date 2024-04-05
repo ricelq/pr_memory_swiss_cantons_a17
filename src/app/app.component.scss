@@ -1,0 +1,14 @@
+.app-component {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 15px;
+}
+
+mat-sidenav-container {
+  mat-sidenav {
+    width: 245px;
+  }
+  mat-sidenav-content {
+    height: 100vh !important;
+  }
+}

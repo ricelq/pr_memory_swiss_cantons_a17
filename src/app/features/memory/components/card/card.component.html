@@ -1,0 +1,22 @@
+<div
+  class="card xl:h-48 h-32"
+  [attr.data-id]="card.id"
+  (click)="clickEvent($event)"
+>
+  <figure class="card-front p-1">
+    <img
+      class="md:max-w-24 max-w-16 py-2 xl:px-2 px-1"
+      src="{{ card.img }}"
+      alt="{{ card.name }}"
+      title="{{ card.name }}"
+    />
+    <h3 class="card-name">{{ card.name }}</h3>
+  </figure>
+  <div class="card-back p-1">
+    <img
+      class="back-img p-2 md:max-w-28 max-w-24"
+      src="assets/images/cantons.png"
+      alt="Thought"
+    />
+  </div>
+</div>

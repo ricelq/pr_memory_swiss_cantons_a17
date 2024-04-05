@@ -1,0 +1,29 @@
+$color_white: #ffffff;
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--custom-secondary);
+
+  .left {
+    display: flex;
+    justify-content: center;
+    .title {
+      margin: inherit;
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .movement {
+      display: flex;
+    }
+
+    .available {
+      color: $color_white;
+      font-size: 1.7rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<mat-sidenav-container>
+  <mat-sidenav
+    #sideNav="matSidenav"
+    opened="true"
+    [mode]="isMobile ? 'over' : 'side'"
+  >
+    <app-sidenav [sideNav]="sideNav"></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content class="mat-elevation-z4 text-gray-900">
+    <app-header [sideNav]="sideNav"></app-header>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

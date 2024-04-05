@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "name": "Appenzell Rhodes-E.",
+    "img": "assets/images/cantons/Appenzell-Rhodes-Exterieures.svg"
+  },
+  {
+    "id": 2,
+    "name": "Appenzell Rhodes-I.",
+    "img": "assets/images/cantons/Appenzell-Rhodes-Interieures.svg"
+  },
+  {
+    "id": 3,
+    "name": "Argovie",
+    "img": "assets/images/cantons/Argovie.svg"
+  },
+  {
+    "id": 4,
+    "name": "Bâle-Campagne",
+    "img": "assets/images/cantons/Bale-Campagne.svg"
+  },
+  {
+    "id": 5,
+    "name": "Bâle-Ville",
+    "img": "assets/images/cantons/Bale-Ville.svg"
+  },
+  {
+    "id": 6,
+    "name": "Berne",
+    "img": "assets/images/cantons/Berne.svg"
+  },
+  {
+    "id": 7,
+    "name": "Fribourg",
+    "img": "assets/images/cantons/Fribourg.svg"
+  },
+  {
+    "id": 8,
+    "name": "Genève",
+    "img": "assets/images/cantons/Geneve.svg"
+  },
+  {
+    "id": 9,
+    "name": "Glarus",
+    "img": "assets/images/cantons/Glarus.svg"
+  },
+  {
+    "id": 10,
+    "name": "Grisons",
+    "img": "assets/images/cantons/Grisons.svg"
+  },
+  {
+    "id": 11,
+    "name": "Jura",
+    "img": "assets/images/cantons/Jura.svg"
+  },
+  {
+    "id": 12,
+    "name": "Lucerne",
+    "img": "assets/images/cantons/Lucerne.svg"
+  },
+  {
+    "id": 13,
+    "name": "Neuchâtel",
+    "img": "assets/images/cantons/Neuchatel.svg"
+  },
+  {
+    "id": 14,
+    "name": "Nidwald",
+    "img": "assets/images/cantons/Nidwald.svg"
+  },
+  {
+    "id": 15,
+    "name": "Obwald",
+    "img": "assets/images/cantons/Obwald.svg"
+  },
+  {
+    "id": 16,
+    "name": "Saint-Gall",
+    "img": "assets/images/cantons/Saint-Gall.svg"
+  },
+  {
+    "id": 17,
+    "name": "Schaffhouse",
+    "img": "assets/images/cantons/Schaffhouse.svg"
+  },
+  {
+    "id": 18,
+    "name": "Schwytz",
+    "img": "assets/images/cantons/Schwytz.svg"
+  },
+  {
+    "id": 19,
+    "name": "Soleure",
+    "img": "assets/images/cantons/Soleure.svg"
+  },
+  {
+    "id": 20,
+    "name": "Tessin",
+    "img": "assets/images/cantons/Tessin.svg"
+  },
+  {
+    "id": 21,
+    "name": "Thurgovie",
+    "img": "assets/images/cantons/Thurgovie.svg"
+  },
+  {
+    "id": 22,
+    "name": "Uri",
+    "img": "assets/images/cantons/Uri.svg"
+  },
+  {
+    "id": 23,
+    "name": "Valais",
+    "img": "assets/images/cantons/Valais.svg"
+  },
+  {
+    "id": 24,
+    "name": "Vaud",
+    "img": "assets/images/cantons/Vaud.svg"
+  },
+  {
+    "id": 25,
+    "name": "Zoug",
+    "img": "assets/images/cantons/Zoug.svg"
+  },
+  {
+    "id": 26,
+    "name": "Zurich",
+    "img": "assets/images/cantons/Zurich.svg"
+  }
+]

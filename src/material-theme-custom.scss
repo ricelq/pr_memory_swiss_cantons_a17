@@ -1,0 +1,163 @@
+/**
+ * @ Description: This file is part of the PRODEIMAT project
+ * @ Author: Ricel Quispe
+ */
+
+@use "@angular/material" as mat;
+
+:root {
+  --custom-primary: #8b1814;
+  --custom-secondary: #424242;
+  --custom-tertiary: #2e2e30;
+
+  --blue: #0282f9;
+  --blue-smoke: #d1dcf1;
+  --bgback: #e5eaf3;
+  --white: #fff;
+  --white-smoke: #f5f5f5;
+}
+
+$custom-primary: (
+  50: #f3e4e4,
+  100: #e2bcbb,
+  200: #ce908e,
+  300: #ba6460,
+  400: #ac423e,
+  500: #9d211c,
+  600: #951d19,
+  700: #8b1814,
+  800: #811411,
+  900: #6f0b09,
+  A100: #ffa2a1,
+  A200: #ff6f6e,
+  A400: #ff3d3b,
+  A700: #ff2421,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+$custom-accent: (
+  50: #e6e6e6,
+  100: #c0c0c1,
+  200: #979798,
+  300: #6d6d6e,
+  400: #4d4d4f,
+  500: #2e2e30,
+  600: #29292b,
+  700: #232324,
+  800: #1d1d1e,
+  900: #121213,
+  A100: #6767f3,
+  A200: #3737f0,
+  A400: #0000f4,
+  A700: #0000da,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #ffffff,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+$custom-warn: (
+  50: #fdeae8,
+  100: #f9cac6,
+  200: #f5a6a1,
+  300: #f1827b,
+  400: #ee685e,
+  500: #eb4d42,
+  600: #e9463c,
+  700: #e53d33,
+  800: #e2342b,
+  900: #dd251d,
+  A100: #ffffff,
+  A200: #ffe0e0,
+  A400: #ffafad,
+  A700: #ff9693,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+// custome theme palette
+$custom-palette-primary: mat.define-palette($custom-primary, 700, 500, 900);
+$custom-palette-accent: mat.define-palette($custom-accent, 700, 500, 900);
+$custom-palette-warn: mat.define-palette($custom-warn, 700, 500, 900);
+
+@include mat.core();
+
+// custom theme
+$custom-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $custom-palette-primary,
+      accent: $custom-palette-accent,
+      warn: $custom-palette-warn,
+    ),
+    density: 0,
+  )
+);
+
+@include mat.all-component-themes($custom-theme);
+
+:root {
+  mat-sidenav,
+  mat-expansion-panel,
+  mat-nav-list {
+    background-color: #424242;
+    color: white;
+  }
+  mat-nav-list a .mdc-list-item__primary-text {
+    color: white;
+  }
+  mat-nav-list a.link-active,
+  mat-nav-list a:hover {
+    .mdc-list-item__primary-text {
+      color: white;
+    }
+    &:before {
+      background-color: gray;
+      opacity: 0.1;
+    }
+  }
+  .mat-icon {
+    color: white;
+  }
+}

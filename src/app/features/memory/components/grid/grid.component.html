@@ -1,0 +1,12 @@
+<div
+  #gridcontainer
+  class="card-container gap-4 items-center justify-center grid lg:grid-cols-6 md:grid-cols-4 grid-cols-3 md:gap-4"
+>
+  @for (card of cards; track $index) {
+  <app-card
+    [card]="card"
+    [isPaused]="isPaused"
+    (cardClicked)="cardClicked($event)"
+  ></app-card>
+  }
+</div>

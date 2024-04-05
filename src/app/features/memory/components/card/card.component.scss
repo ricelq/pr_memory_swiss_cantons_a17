@@ -1,0 +1,98 @@
+.card {
+  // uncomment for testing
+  // transform: rotateY(180deg);
+
+  border-radius: 0.25rem;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+
+  &.is-ios {
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    -ms-transition: all 100ms;
+    transition: all 100ms;
+  }
+  &:not(.is-ios) {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  &.card--picked {
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    // z-index: 1000;
+    display: inline-block;
+  }
+  &.card--guessed {
+    background-color: var(--white-smoke);
+    zoom: 0.9;
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    align-items: center;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    position: absolute;
+
+    -webkit-transition: transform 330ms ease-in-out;
+    -moz-transition: transform 330ms ease-in-out;
+    -ms-transition: transform 330ms ease-in-out;
+    transition: transform 330ms ease-in-out;
+
+    text-align: center;
+    .card-name {
+      font-size: 0.9rem;
+      line-height: 1.1rem;
+      font-weight: 400;
+      height: 45px;
+    }
+  }
+
+  .card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--white);
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+
+    background-color: white;
+
+    img {
+      // max-height: calc(100% - 24px);
+    }
+  }
+  .card-back {
+    background-color: var(--bgback);
+    -ms-transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    .back-img {
+      max-height: 90%;
+    }
+  }
+}
