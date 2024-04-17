@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter, OnInit, ViewChild, ElementRef }
 import { CardComponent } from '../card/card.component';
 import { CommonModule } from '@angular/common';
 import { MemoryService } from '../../services/memory.service';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 
 @Component({
@@ -39,17 +40,14 @@ export class GridComponent implements OnInit {
   @ViewChild('gridcontainer') gridcontainer!: ElementRef;
 
   constructor(private memoryService: MemoryService) {
-
-  }
-
-  ngOnInit(): void {
-
-    this.memoryService.resetCantonsGame.subscribe((needReset) => {
+    this.memoryService.resetCantonsGame.pipe(takeUntilDestroyed()).subscribe((needReset) => {
       if (needReset) {
         this.resetAll();
       }
-    })
+    });
+  }
 
+  ngOnInit(): void {
     this.counter = this.cards.length;
     this.cardsToGuessed = this.cards.length / 2;
   }
